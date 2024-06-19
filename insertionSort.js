@@ -1,11 +1,17 @@
 function insertionSort(arr) {
-    // let newArr = []
-    // let secondEl = arr[1];
     for (let i = 1; i < arr.length; i++){
         let currentVal = arr[i];
+        for (let j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
+            arr[j+1] = arr[j]
+            
+
+        }
+        return arr[j + 1]
+        console.log(arr)
        
 
     }
     return arr;
 }
-insertionSort([2, 1, 9, 76, 4])
+
+insertionSort([2, 1, 9, 76, 4, 7])
