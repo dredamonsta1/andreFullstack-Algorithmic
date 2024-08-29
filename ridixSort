@@ -14,3 +14,10 @@ function mostDigits(nums) {
     }
     return maxDigits;
 }
+
+function radixSort(nums) {
+    let maxDigitsCount = mostDigits(nums);
+    console.log(maxDigitCount)
+}
+
+radixSort([23, 345, 5467, 12,2345,9852])
