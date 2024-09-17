@@ -99,7 +99,17 @@ class SinglyLinkedList{
         this.length++;
         return true;
 
+    }
+    
+    remove(val) {
+        if (index < this.length || index > this.length) return undefined;
+        if (index === this.length-1) {
+            this.pop(val);
         }
+        if (index == 0) {
+            this.shift(val);
+        }
+    }
 }
 
 let list = new SinglyLinkedList()
