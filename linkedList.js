@@ -85,10 +85,13 @@ class SinglyLinkedList{
         if (index < 0 || index > this.length) return false;
         if (index === this.length) {
             this.push(val);
+            // to return a bool you move this. into the function block and return true
             return true;
             
         }
+        // or to return bool in one line you just add !! after the return
         if (index === 0) return !!this.unshift(val);
+
         let prev = this.get(index - 1);
         let temp = prev.next;
         prev.next = newNode;
