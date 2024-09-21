@@ -39,6 +39,10 @@ class Node{
         this.length--;
         return poppedNode;
     }
+
+    shift() {
+        if(!this.length === 0) return undefined
+    }
 }
 
 
