@@ -25,6 +25,10 @@ class Node{
 
     }
 
+    pop() {
+        if(!head)
+    }
+
 }
 
 
