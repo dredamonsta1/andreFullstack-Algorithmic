@@ -1,0 +1,13 @@
+// Node
+//     - val
+//     - next
+//     -prev
+
+
+class Node{
+
+}
+
+class doublyLinkedList{
+
+}
