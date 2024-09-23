@@ -55,8 +55,9 @@ class Node{
         return oldHead;
     }
 
-    unshift() {
-        
+    unshift(val) {
+        let newNode = new Node(val);
+
     }
 }
 
