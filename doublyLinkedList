@@ -64,11 +64,12 @@ class Node{
             this.head.prev = newNode;
             newNode.next = this.head;
             this.head = newNode;ß
-
         }
         length++;
         return this;
-
+    }
+    get(index) {
+        
     }
 }
 
