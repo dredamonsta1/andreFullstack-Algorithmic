@@ -78,7 +78,6 @@ class Node{
                 current = current.next;
                 count++;
         }
-        return current;
         } else {
             // decraments end of list
             let count = this.length - 1;
@@ -87,8 +86,12 @@ class Node{
                 current = current.prev;
                 count--;
             }
-            return current
         }
+        return current
+    }
+
+    set() {
+        
     }
 }
 
