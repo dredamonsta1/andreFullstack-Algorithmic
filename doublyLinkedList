@@ -90,7 +90,8 @@ class Node{
         return current
     }
 
-    set() {
+    set(index, val) {
+        
         
     }
 }
