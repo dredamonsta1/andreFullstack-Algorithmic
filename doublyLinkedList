@@ -91,7 +91,12 @@ class Node{
     }
 
     set(index, val) {
-        
+        let result = this.get(index);
+        if (result != null) {
+            result.val = val;
+            return true
+        }
+        return false;
         
     }
 }
