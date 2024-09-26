@@ -70,13 +70,25 @@ class Node{
     }
     get(index) {
         if (index < 0 || index >= this.length) return null;
-        let count = 0;
-        let current = this.head;
-        while (count != index) {
-            current = current.next;
-            count++
+        if (index <= this.length / 2) {
+            // incraments start of list
+            let count = 0;
+            let current = this.head;
+            while (count != index) {
+                current = current.next;
+                count++;
         }
         return current;
+        } else {
+            // decraments end of list
+            let count = this.length - 1;
+            let current = this.tail;
+            while (count !== index) {
+                current = current.prev;
+                count--;
+            }
+            return current
+        }
     }
 }
 
