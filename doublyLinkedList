@@ -43,7 +43,7 @@ class Node{
     shift() {
         if (!this.length === 0) return undefined
         let oldHead = this.head;
-        if (this.head === 1) {
+        if (this.length === 1) {
             this.head = null;
             this.tail = null;
         } else {
@@ -65,7 +65,7 @@ class Node{
             newNode.next = this.head;
             this.head = newNode;ß
         }
-        length++;
+        this.length++;
         return this;
     }
     get(index) {
@@ -86,8 +86,8 @@ class Node{
                 current = current.prev;
                 count--;
             }
+            return current;
         }
-        return current
     }
 
     set(index, val) {
