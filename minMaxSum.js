@@ -17,3 +17,8 @@ function miniMaxSum(arr) {
     console.log( largeArr, smallArr)
 }
 // runtime error on 55555 test case due to getting the same number for both
+// this code gets rid of the error case
+let min = Math.min.apply(null, arr), 
+    max = Math.max.apply(null, arr);
+let sum = arr.reduce((prev, curr) => prev + curr);
+console.log(sum - max, sum - min);
